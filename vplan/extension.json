@@ -1,0 +1,58 @@
+{
+  "name": "VPlan",
+  "uniqid": "ext.zwiebelgasse.vplan",
+  "version": "1",
+
+  "requiredVersion": "1.4.1",
+
+  "menu": {
+    "categorie": "1",
+    "icon": "fa fas fa-plug",
+    "params": ""
+  },
+
+  "adminGroupName": "Admin_Ext_Vplan",
+  "aclGroupName": "ext_vplan",
+
+
+  "submenu": [
+    {
+      "title": "VPlan",
+      "icon": "fa fa-cogs",
+      "url": {
+        "page": "ext_vplan",
+        "params": {
+          "view": "default"
+        }
+      }
+    },
+    {
+      "title": "Import",
+      "icon": "fa fa-cogs",
+      "admin": true,
+      "url": {
+        "page": "ext_vplan",
+        "params": {
+          "view": "import",
+          "admin": "true"
+        }
+      }
+    },
+    {
+      "title": "Admin",
+      "icon": "fa fa-cogs",
+      "admin": true,
+      "url": {
+        "page": "ext_vplan",
+        "params": {
+          "view": "default",
+          "admin": "true"
+        }
+      }
+    }
+    
+  ]
+
+
+
+}
